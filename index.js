@@ -4,6 +4,8 @@ import "dotenv/config";
 import { GoogleGenerativeAI } from "@google/generative-ai";
 import prompts from "./prompts.js";
 
+console.log("Pinger started....");
+
 // Google AI keys
 const apiKey = process.env.GEMINI_API_KEY;
 const genAI = new GoogleGenerativeAI(apiKey);
